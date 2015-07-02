@@ -7,22 +7,25 @@
 </head>
 <body>
 	<section class="loginform cf">
-		<form name="login" action="http://localhost/PorchSitDB/php_scripts/android_login_api/index.php"
+		<form name="login" action="http://192.168.0.109/PorchSitDB/index.php"
 			method="post" accept-charset="utf-8">
 			<ul>
 				<li>
-					<label for="usermail">Email</label>
-					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+					<label for="email">Email</label>
+					<input type="email" name="email" placeholder="yourname@email.com" required>
 				</li>
 				<li>
 					<label for="password">Password</label>
 					<input type="password" name="password" placeholder="password" required>
 				</li>
 				<li>
-					<input type="submit" value="Login">
+					<input type="submit" name="login" value="Login">
 				</li>
 				<li>
-					<input type="submit" name="new_user" value="New User">
+					<a href="C:\Users\Andrew\Documents\Projects\PorchSitWeb\new_user.html">New User</a>
+				</li>
+				<li>
+					<input type="hidden" name="tag" value="web">
 				</li>
 			</ul>
 		</form>

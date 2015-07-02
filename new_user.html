@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Login</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="loginform cf">
+		<form name="new_user" action="http://192.168.0.109/PorchSitDB/index.php"
+			method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="name">Name</label>
+					<input type="text" name="name" placeholder="Your Name" required>
+				</li>
+				<li>
+					<label for="email">Email</label>
+					<input type="email" name="email" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" name="password" placeholder="password" required>
+				</li>
+				<li>
+					<input type="submit" name="new_user" value="Register">
+				</li>
+				<li>
+					<input type="hidden" name="tag" value="web">
+				</li>
+			</ul>
+		</form>
+	</section>
+</body>
+</html>
